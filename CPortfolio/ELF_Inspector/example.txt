@@ -1,0 +1,13 @@
+make generate-output
+make[1]: Entering directory '/home/akatsane/cs4400/Assignment4/tests'
+for i in f_uses_a.so fg_use_ab.so f_uses_a_g_uses_b.so f_calls_e.so f_uses_a_calls_e.so f_uses_a_via_e.so f_calls_g_uses_a.so many_uses.so ; do  \
+          ./inspect $i > $i.out || exit 1; \
+        done
+make[1]: Leaving directory '/home/akatsane/cs4400/Assignment4/tests'
+make check-output CHECK_LEVEL=-2
+make[1]: Entering directory '/home/akatsane/cs4400/Assignment4/tests'
+for i in f_uses_a.so fg_use_ab.so f_uses_a_g_uses_b.so f_calls_e.so f_uses_a_calls_e.so f_uses_a_via_e.so f_calls_g_uses_a.so many_uses.so ; do  \
+          diff -q $i.expect-2 $i.out || exit 1; \
+        done
+Files f_calls_e.so.expect-2 and f_calls_e.so.out differ
+make[1]: Leaving directory '/home/akatsane/cs4400/Assignment4/tests'

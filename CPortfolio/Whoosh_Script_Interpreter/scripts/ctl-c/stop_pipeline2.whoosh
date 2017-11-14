@@ -1,0 +1,11 @@
+# Second part of a pipeline sleeps; ctl-c should stop all
+
+/bin/echo waiting | /bin/bash -c "sleep 1000"
+/bin/echo done
+
+# Needed input:
+#  sleep 1
+#  ctl-c
+
+# Expected output:
+#  done
