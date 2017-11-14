@@ -1,0 +1,54 @@
+          _____                _____                    _____                    _____                    _____                    _____          
+         /\    \              /\    \                  /\    \                  /\    \                  /\    \                  /\    \         
+        /::\____\            /::\    \                /::\    \                /::\    \                /::\    \                /::\____\        
+       /:::/    /            \:::\    \              /::::\    \              /::::\    \              /::::\    \              /:::/    /        
+      /:::/    /              \:::\    \            /::::::\    \            /::::::\    \            /::::::\    \            /:::/    /         
+     /:::/    /                \:::\    \          /:::/\:::\    \          /:::/\:::\    \          /:::/\:::\    \          /:::/    /          
+    /:::/    /                  \:::\    \        /:::/__\:::\    \        /:::/__\:::\    \        /:::/  \:::\    \        /:::/____/           
+   /:::/    /                   /::::\    \      /::::\   \:::\    \      /::::\   \:::\    \      /:::/    \:::\    \      /::::\    \           
+  /:::/    /      _____        /::::::\    \    /::::::\   \:::\    \    /::::::\   \:::\    \    /:::/    / \:::\    \    /::::::\____\________  
+ /:::/____/      /\    \      /:::/\:::\    \  /:::/\:::\   \:::\____\  /:::/\:::\   \:::\    \  /:::/    /   \:::\    \  /:::/\:::::::::::\    \ 
+|:::|    /      /::\____\    /:::/  \:::\____\/:::/  \:::\   \:::|    |/:::/  \:::\   \:::\____\/:::/____/     \:::\____\/:::/  |:::::::::::\____\
+|:::|____\     /:::/    /   /:::/    \::/    /\::/   |::::\  /:::|____|\::/    \:::\  /:::/    /\:::\    \      \::/    /\::/   |::|~~~|~~~~~     
+ \:::\    \   /:::/    /   /:::/    / \/____/  \/____|:::::\/:::/    /  \/____/ \:::\/:::/    /  \:::\    \      \/____/  \/____|::|   |          
+  \:::\    \ /:::/    /   /:::/    /                 |:::::::::/    /            \::::::/    /    \:::\    \                    |::|   |          
+   \:::\    /:::/    /   /:::/    /                  |::|\::::/    /              \::::/    /      \:::\    \                   |::|   |          
+    \:::\__/:::/    /    \::/    /                   |::| \::/____/               /:::/    /        \:::\    \                  |::|   |          
+     \::::::::/    /      \/____/                    |::|  ~|                    /:::/    /          \:::\    \                 |::|   |          
+      \::::::/    /                                  |::|   |                   /:::/    /            \:::\    \                |::|   |          
+       \::::/    /                                   \::|   |                  /:::/    /              \:::\____\               \::|   |          
+        \::/____/                                     \:|   |                  \::/    /                \::/    /                \:|   |          
+         ~~                                            \|___|                   \/____/                  \/____/                  \|___|          
+                                                                                                                                                  
+
+..................................................
+Written by Andrew Katsanevas for CS 5530 3/23/2016
+..................................................
+
+
+----------
+HOW TO USE
+----------
+- To test a regular user, register a new one or use any found in the database
+- To test a regular user, I suggest you use login: admin password: admin
+- Use number inputs to choose functions
+- When asked, enter data in the correct format (check existing database entries if unsure of correct formats)
+
+
+----------------------------------------
+REQUIRED FEATURES AND WHERE TO FIND THEM
+----------------------------------------
+1. Registration: Login Menu option 2 
+2. Visit: Action Menu option 2
+3. New POI: Action Menu option 13
+4. Update POI: Action Menu option 14
+5. Favorites: Action Menu option 3
+6. Feedback: Action Menu option 4
+7. Rate Feedback: Action Menu option 5
+8. Trust: Action Menu option 7
+9. POI Browsing: Action Menu option 1
+10. Useful Feedbacks: Action Menu option 6
+11. Visit Suggestions: Given after registering a visit (Action Menu option 2)
+12. Degrees of Separation: Action Menu option 8
+13. Statistics: Action Menu option 9, 10, 11
+14. User Awards: Action Menu option 15, 16
