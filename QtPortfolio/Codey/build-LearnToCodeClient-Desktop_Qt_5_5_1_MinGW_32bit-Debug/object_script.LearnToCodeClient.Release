@@ -1,0 +1,17 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\model.o
+./release\user.o
+./release\qsfmlcanvas.o
+./release\world.o
+./release\httprequest.o
+./release\worlditem.o
+./release\level.o
+./release\qrc_icons.o
+./release\moc_mainwindow.o
+./release\moc_model.o
+./release\moc_qsfmlcanvas.o
+./release\moc_world.o
+./release\moc_httprequest.o
+);

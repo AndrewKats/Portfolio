@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>icons/forwardIcon.ico</file>
+        <file>icons/ifIcon.ico</file>
+        <file>icons/jumpIcon.ico</file>
+        <file>icons/loopIcon.ico</file>
+        <file>icons/waitIcon.ico</file>
+        <file>icons/removeLastIcon.ico</file>
+        <file>icons/removeLastIcon.png</file>
+    </qresource>
+</RCC>

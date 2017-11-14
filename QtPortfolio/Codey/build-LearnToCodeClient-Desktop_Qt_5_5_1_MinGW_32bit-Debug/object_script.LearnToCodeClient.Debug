@@ -1,0 +1,17 @@
+INPUT(
+./debug\main.o
+./debug\mainwindow.o
+./debug\model.o
+./debug\user.o
+./debug\qsfmlcanvas.o
+./debug\world.o
+./debug\httprequest.o
+./debug\worlditem.o
+./debug\level.o
+./debug\qrc_icons.o
+./debug\moc_mainwindow.o
+./debug\moc_model.o
+./debug\moc_qsfmlcanvas.o
+./debug\moc_world.o
+./debug\moc_httprequest.o
+);
