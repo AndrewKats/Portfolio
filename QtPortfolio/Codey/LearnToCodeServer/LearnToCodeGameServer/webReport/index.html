@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+  <script src="js/jquery.csv.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/url.min.js"></script>
+</head>
+
+<body>
+  <!-- Welcome Area -->
+  <div class="header">
+    <div class="codeystats">CodeyStats</div>
+    <h1 class="title_h1"></h1>
+  </div>
+  <div class="welcome_div">Welcome back #instructor#! We've been wondering where you've been. Here are some nice statistics about your students.
+    We hope they have been working hard!
+  </div>
+
+  <!-- Graph  Area-->
+  <div class="individual-info">CLICK THE GRAPH FOR STUDENT INFO</div>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+  <script src="js/draw.js"></script>
+
+  <!-- Table Area -->
+  <input type="text" value="Search All Fields" class="search" onkeyup=" return highlightRowSearch()" onclick="return clearSearch()">
+  <div class="table-header">Here is a list of all enrolled students, their scores and level in tabular form for easy glance.</div>
+  <table class="results"></table>
+  <div class="credits">Proudly Presented by Team Qtπ</div>
+</body>
+
+</html>
