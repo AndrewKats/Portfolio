@@ -1,0 +1,16 @@
+C:\Users\Andrew\Source\Repos\AquamanCouldBeatTheFlash\AgCubio\AndrewModel\bin\Debug\AndrewModel.dll
+C:\Users\Andrew\Source\Repos\AquamanCouldBeatTheFlash\AgCubio\AndrewModel\bin\Debug\AndrewModel.pdb
+C:\Users\Andrew\Source\Repos\AquamanCouldBeatTheFlash\AgCubio\AndrewModel\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Andrew\Source\Repos\AquamanCouldBeatTheFlash\AgCubio\AndrewModel\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Andrew\Source\Repos\AquamanCouldBeatTheFlash\AgCubio\AndrewModel\obj\Debug\AndrewModel.dll
+C:\Users\Andrew\Source\Repos\AquamanCouldBeatTheFlash\AgCubio\AndrewModel\obj\Debug\AndrewModel.pdb
+C:\Users\athani\Source\Repos\AquamanCouldBeatTheFlash\AgCubio\AndrewModel\bin\Debug\AndrewModel.XML
+C:\Users\athani\Source\Repos\AquamanCouldBeatTheFlash\AgCubio\AndrewModel\bin\Debug\AndrewModel.dll
+C:\Users\athani\Source\Repos\AquamanCouldBeatTheFlash\AgCubio\AndrewModel\bin\Debug\AndrewModel.pdb
+C:\Users\athani\Source\Repos\AquamanCouldBeatTheFlash\AgCubio\AndrewModel\bin\Debug\Newtonsoft.Json.dll
+C:\Users\athani\Source\Repos\AquamanCouldBeatTheFlash\AgCubio\AndrewModel\bin\Debug\Newtonsoft.Json.xml
+C:\Users\athani\Source\Repos\AquamanCouldBeatTheFlash\AgCubio\AndrewModel\obj\Debug\AndrewModel.csprojResolveAssemblyReference.cache
+C:\Users\athani\Source\Repos\AquamanCouldBeatTheFlash\AgCubio\AndrewModel\obj\Debug\AndrewModel.dll
+C:\Users\athani\Source\Repos\AquamanCouldBeatTheFlash\AgCubio\AndrewModel\obj\Debug\AndrewModel.pdb
+C:\Users\Andrew\Source\Repos\AquamanCouldBeatTheFlash\AgCubio\AndrewModel\bin\Debug\AndrewModel.XML
+C:\Users\Andrew\Source\Repos\AquamanCouldBeatTheFlash\AgCubio\AndrewModel\obj\Debug\AndrewModel.csprojResolveAssemblyReference.cache

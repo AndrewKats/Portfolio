@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AndrewNetworkController</name>
+    </assembly>
+    <members>
+        <member name="T:AgCubio.PreservedState">
+            <summary>
+            The current state of connection
+            </summary>
+        </member>
+        <member name="F:AgCubio.PreservedState.stateSocket">
+            <summary>
+            The socket of this state
+            </summary>
+        </member>
+        <member name="F:AgCubio.PreservedState.BufferSize">
+            <summary>
+            The size of the byte buffer
+            </summary>
+        </member>
+        <member name="F:AgCubio.PreservedState.buffer">
+            <summary>
+            Holds the bytes sent by the server
+            </summary>
+        </member>
+        <member name="F:AgCubio.PreservedState.sb">
+            <summary>
+            Stores the json sent by the server
+            </summary>
+        </member>
+        <member name="F:AgCubio.PreservedState.Callback">
+            <summary>
+            The current callback function of the state
+            </summary>
+        </member>
+        <member name="F:AgCubio.PreservedState.error">
+            <summary>
+            True if a connection error has occured
+            </summary>
+        </member>
+        <member name="T:AgCubio.Client">
+            <summary>
+            Handles connection of our client to the server
+            </summary>
+        </member>
+        <member name="F:AgCubio.Client.port">
+            <summary>
+            The port we're using
+            </summary>
+        </member>
+        <member name="F:AgCubio.Client.response">
+            <summary>
+            The response of the client
+            </summary>
+        </member>
+        <member name="M:AgCubio.Client.Connect_to_Server(System.Action{AgCubio.PreservedState},System.String)">
+            <summary>
+            Creates a new socket and begins connect
+            </summary>
+            <param name="callbackfunction"> Our callback function</param>
+            <param name="hostname"> The hostname of the server</param>
+            <returns></returns>
+        </member>
+        <member name="M:AgCubio.Client.Connected_to_Server(System.IAsyncResult)">
+            <summary>
+            The callback of Connect_to_Server which ends the connect
+            </summary>
+            <param name="state_in_an_ar_object"> The state passed from the caller</param>
+        </member>
+        <member name="M:AgCubio.Client.ReceiveCallback(System.IAsyncResult)">
+            <summary>
+            The callback of i_want_more_data that ends the receive
+            </summary>
+            <param name="state_in_an_ar_object"> The state sent from the caller</param>
+        </member>
+        <member name="M:AgCubio.Client.i_want_more_data(AgCubio.PreservedState)">
+            <summary>
+            Begins receive for more data from the server
+            </summary>
+            <param name="state_in_an_ar_object"> The state sent from the caller</param>
+        </member>
+        <member name="M:AgCubio.Client.Send(AgCubio.PreservedState,System.String)">
+            <summary>
+            Begins the send to the server
+            </summary>
+            <param name="state"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:AgCubio.Client.SendCallBack(System.IAsyncResult)">
+            <summary>
+            The callback of Send that ends the send
+            </summary>
+            <param name="state_in_an_ar_object"> The state sent from the caller</param>
+        </member>
+    </members>
+</doc>

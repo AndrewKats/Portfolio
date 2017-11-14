@@ -1,0 +1,240 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Model</name>
+    </assembly>
+    <members>
+        <member name="T:AgCubio.Cube">
+            <summary>
+            Class which represents a cube object 
+            </summary>
+        </member>
+        <member name="P:AgCubio.Cube.loc_x">
+            <summary>
+            x coordinate of the cube 
+            </summary>
+        </member>
+        <member name="P:AgCubio.Cube.loc_y">
+            <summary>
+            y coordinate of the cube
+            </summary>
+        </member>
+        <member name="P:AgCubio.Cube.Mass">
+            <summary>
+            mass value for the cube 
+            </summary>
+        </member>
+        <member name="P:AgCubio.Cube.Name">
+            <summary>
+            name of the cube
+            </summary>
+        </member>
+        <member name="P:AgCubio.Cube.argb_color">
+            <summary>
+            color of the cube
+            </summary>
+        </member>
+        <member name="P:AgCubio.Cube.food">
+            <summary>
+            whether the cube is food
+            </summary>
+        </member>
+        <member name="F:AgCubio.Cube.uid">
+            <summary>
+            unique id for the cube
+            </summary>
+        </member>
+        <member name="F:AgCubio.Cube.team_id">
+            <summary>
+            team_id for the cube
+            </summary>
+        </member>
+        <member name="P:AgCubio.Cube.collisionRadius">
+            <summary>
+            Radius of the collision circle of a cube
+            </summary>
+        </member>
+        <member name="P:AgCubio.Cube.width">
+            <summary>
+            width of the cube
+            </summary>
+        </member>
+        <member name="P:AgCubio.Cube.top">
+            <summary>
+            The left side of this cube
+            </summary>
+        </member>
+        <member name="P:AgCubio.Cube.bottom">
+            <summary>
+            The left side of this cube
+            </summary>
+        </member>
+        <member name="P:AgCubio.Cube.left">
+            <summary>
+            The left side of this cube
+            </summary>
+        </member>
+        <member name="P:AgCubio.Cube.right">
+            <summary>
+            The right side of this cube
+            </summary>
+        </member>
+        <member name="F:AgCubio.Cube.boostFrames">
+            <summary>
+            The frames this cube has to boost
+            </summary>
+        </member>
+        <member name="F:AgCubio.Cube.isBoosted">
+            <summary>
+            Determines if a cube is being boosted from a split
+            </summary>
+        </member>
+        <member name="F:AgCubio.Cube.splitTime">
+            <summary>
+            The time since a split
+            </summary>
+        </member>
+        <member name="M:AgCubio.Cube.#ctor(System.Double,System.Double,System.Int32,System.Int32,System.Int32,System.Boolean,System.String,System.Double)">
+            <summary>
+            Constructor for the cube
+            </summary>
+            <param name="loc_x"> The horizontal location</param>
+            <param name="loc_y"> The vertical location</param>
+            <param name="argb_color"> The argb color</param>
+            <param name="uid"> The unique ID</param>
+            <param name="team_id"> The team ID</param>
+            <param name="food"> Whether this cube is food</param>
+            <param name="Name"> The name of this cube</param>
+            <param name="Mass"> The mass of this cube</param>
+        </member>
+        <member name="T:AgCubio.World">
+            <summary>
+            Class that represents the world of the game
+            </summary>
+        </member>
+        <member name="F:AgCubio.World.worldWidth">
+            <summary>
+            World width and height variables
+            </summary>
+        </member>
+        <member name="F:AgCubio.World.worldHeight">
+            <summary>
+            World width and height variables
+            </summary>
+        </member>
+        <member name="F:AgCubio.World.foodCubes">
+            <summary>
+            Creates dictionary for storing cubes
+            </summary>
+        </member>
+        <member name="F:AgCubio.World.virusCubes">
+            <summary>
+            Holds the world's viruses
+            </summary>
+        </member>
+        <member name="F:AgCubio.World.teams">
+            <summary>
+            Holds the players and teams if they split
+            </summary>
+        </member>
+        <member name="F:AgCubio.World.cubesToUpdate">
+            <summary>
+            The cubes that have changed that we need to send to clients
+            </summary>
+        </member>
+        <member name="F:AgCubio.World.foodCount">
+            <summary>
+            Number of food cubes currently in the game
+            </summary>
+        </member>
+        <member name="F:AgCubio.World.virusCount">
+            <summary>
+            The amount of viruses in the world
+            </summary>
+        </member>
+        <member name="F:AgCubio.World.color">
+            <summary>
+            A variable for storing various colors for cubes
+            </summary>
+        </member>
+        <member name="F:AgCubio.World.heartBeatsPerSec">
+            <summary>
+            The refresh rate of the game
+            </summary>
+        </member>
+        <member name="F:AgCubio.World.foodMass">
+            <summary>
+            The mass of a food
+            </summary>
+        </member>
+        <member name="F:AgCubio.World.virusMass">
+            <summary>
+            The mass of a virus
+            </summary>
+        </member>
+        <member name="F:AgCubio.World.playerStart">
+            <summary>
+            The starting mass of a new player
+            </summary>
+        </member>
+        <member name="F:AgCubio.World.maxFood">
+            <summary>
+            The most food cubes that can exist at a time
+            </summary>
+        </member>
+        <member name="F:AgCubio.World.minSplitMass">
+            <summary>
+            The minimum mass of a cube allowed to split
+            </summary>
+        </member>
+        <member name="F:AgCubio.World.maxSplitCubes">
+            <summary>
+            The maximum amount of cubes on a team
+            </summary>
+        </member>
+        <member name="F:AgCubio.World.absorbConstant">
+            <summary>
+            Defines the required relative size of a cube that allows it to eat another
+            </summary>
+        </member>
+        <member name="F:AgCubio.World.uidCount">
+            <summary>
+            Increments an ID count that increments every time a new uid is assigned
+            </summary>
+        </member>
+        <member name="F:AgCubio.World.minSplitTime">
+            <summary>
+            The time it takes to merge after split
+            </summary>
+        </member>
+        <member name="M:AgCubio.World.#ctor">
+            <summary>
+            Constructor for the world
+            </summary>
+        </member>
+        <member name="M:AgCubio.World.addFood(System.Int32)">
+            <summary>
+            Adds the specified amount of food cubes to the world in random locations
+            </summary>
+            <param name="amount"> Amount of food cubes to add</param>
+        </member>
+        <member name="M:AgCubio.World.addVirus(System.Int32)">
+            <summary>
+            Adds the specified amount of virus cubes to the world in random locations
+            </summary>
+            <param name="amount"> Amount of virus cubes to add</param>
+        </member>
+        <member name="M:AgCubio.World.AttritionPlayer(AgCubio.Cube)">
+            <summary>
+            Slowly shrinks the player over time based on their mass
+            </summary>
+            <param name="cube"> The cube to take mass from</param>
+        </member>
+        <member name="M:AgCubio.World.update(System.String[])">
+            <summary>
+            Update method for deserializing cubes and storing them in the dictionary
+            </summary>
+            <param name="json"> Cube info to deserialize</param>
+        </member>
+    </members>
+</doc>

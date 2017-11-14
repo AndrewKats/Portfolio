@@ -1,0 +1,147 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AndrewModel</name>
+    </assembly>
+    <members>
+        <member name="T:AgCubio.World">
+            <summary>
+            The world containing the cubes
+            </summary>
+        </member>
+        <member name="F:AgCubio.World.Width">
+            <summary>
+            The horizontal width of the world
+            </summary>
+        </member>
+        <member name="F:AgCubio.World.Height">
+            <summary>
+            The vertical height of the world
+            </summary>
+        </member>
+        <member name="P:AgCubio.World.foodCount">
+            <summary>
+            The amount of food currently in the world
+            </summary>
+        </member>
+        <member name="P:AgCubio.World.cubes">
+            <summary>
+            All the cubes contained in this world
+            </summary>
+        </member>
+        <member name="M:AgCubio.World.#ctor">
+            <summary>
+            Constructor for World that initializes foodCount, Width, Height, and cubes
+            </summary>
+        </member>
+        <member name="M:AgCubio.World.Update(System.Collections.Generic.List{System.String},System.Int32@,System.Collections.Generic.HashSet{System.Int32})">
+            <summary>
+            Updates the cells currently in the world based on json messages
+            </summary>
+            <param name="jsons"> A list of json strings to parse</param>
+            <param name="myID"> The player uid</param>
+            <param name="team"> A set of all cubes belonging to the player when split </param>
+        </member>
+        <member name="T:AgCubio.Cube">
+            <summary>
+            Represents a cube with a mass, width, position, and identification
+            </summary>
+        </member>
+        <member name="F:AgCubio.Cube.uid">
+            <summary>
+            The unique ID of this cube
+            </summary>
+        </member>
+        <member name="F:AgCubio.Cube.team_id">
+            <summary>
+            The ID of this cube's team
+            </summary>
+        </member>
+        <member name="F:AgCubio.Cube.loc_x">
+            <summary>
+            The x (left) position of this cube
+            </summary>
+        </member>
+        <member name="F:AgCubio.Cube.loc_y">
+            <summary>
+            The y (top) position of this cube
+            </summary>
+        </member>
+        <member name="F:AgCubio.Cube.Name">
+            <summary>
+            The name of this cube
+            </summary>
+        </member>
+        <member name="P:AgCubio.Cube.Mass">
+            <summary>
+            The mass of this cube
+            </summary>
+        </member>
+        <member name="F:AgCubio.Cube.argb_color">
+            <summary>
+            The color of this cube
+            </summary>
+        </member>
+        <member name="F:AgCubio.Cube.food">
+            <summary>
+            Whether this cube is food (or a player)
+            </summary>
+        </member>
+        <member name="P:AgCubio.Cube.width">
+            <summary>
+            The width of this cube based on mass.
+            Width = Mass^0.65
+            </summary>
+        </member>
+        <member name="P:AgCubio.Cube.top">
+            <summary>
+            The position of the top of this cube (same as y location)
+            </summary>
+        </member>
+        <member name="P:AgCubio.Cube.left">
+            <summary>
+            The position of the left of this cube (same as x location)
+            </summary>
+        </member>
+        <member name="P:AgCubio.Cube.right">
+            <summary>
+            The position of the right side of this cube
+            </summary>
+        </member>
+        <member name="P:AgCubio.Cube.bottom">
+            <summary>
+            The position of the bottom side of this cube
+            </summary>
+        </member>
+        <member name="P:AgCubio.Cube.centerX">
+            <summary>
+            The horizontal position of the center of this cube
+            </summary>
+        </member>
+        <member name="P:AgCubio.Cube.centerY">
+            <summary>
+            The vertical position of the center of this cube
+            </summary>
+        </member>
+        <member name="M:AgCubio.Cube.Center(System.Double,System.Double)">
+            <summary>
+            Sets the center of a cube
+            </summary>
+            <param name="x"> x position of center</param>
+            <param name="y"> y position of center</param>
+        </member>
+        <member name="M:AgCubio.Cube.TopLeft(System.Double,System.Double)">
+            <summary>
+            Sets the top left corner of a cube
+            </summary>
+            <param name="x"> x position of corner</param>
+            <param name="y"> y position of corner</param>
+        </member>
+        <member name="M:AgCubio.Cube.ChangeMass(System.Double)">
+            <summary>
+            Sets the mass of a cube
+            </summary>
+            <param name="mass"> The mass of this cube</param>
+        </member>
+    </members>
+</doc>

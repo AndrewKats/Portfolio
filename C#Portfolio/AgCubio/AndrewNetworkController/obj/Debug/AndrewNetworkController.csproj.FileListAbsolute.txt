@@ -1,0 +1,16 @@
+C:\Users\Andrew\Source\Repos\AquamanCouldBeatTheFlash\AgCubio\AndrewNetworkController\bin\Debug\AndrewNetworkController.dll
+C:\Users\Andrew\Source\Repos\AquamanCouldBeatTheFlash\AgCubio\AndrewNetworkController\bin\Debug\AndrewNetworkController.pdb
+C:\Users\Andrew\Source\Repos\AquamanCouldBeatTheFlash\AgCubio\AndrewNetworkController\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Andrew\Source\Repos\AquamanCouldBeatTheFlash\AgCubio\AndrewNetworkController\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Andrew\Source\Repos\AquamanCouldBeatTheFlash\AgCubio\AndrewNetworkController\obj\Debug\AndrewNetworkController.dll
+C:\Users\Andrew\Source\Repos\AquamanCouldBeatTheFlash\AgCubio\AndrewNetworkController\obj\Debug\AndrewNetworkController.pdb
+C:\Users\athani\Source\Repos\AquamanCouldBeatTheFlash\AgCubio\AndrewNetworkController\bin\Debug\AndrewNetworkController.XML
+C:\Users\athani\Source\Repos\AquamanCouldBeatTheFlash\AgCubio\AndrewNetworkController\bin\Debug\AndrewNetworkController.dll
+C:\Users\athani\Source\Repos\AquamanCouldBeatTheFlash\AgCubio\AndrewNetworkController\bin\Debug\AndrewNetworkController.pdb
+C:\Users\athani\Source\Repos\AquamanCouldBeatTheFlash\AgCubio\AndrewNetworkController\bin\Debug\Newtonsoft.Json.dll
+C:\Users\athani\Source\Repos\AquamanCouldBeatTheFlash\AgCubio\AndrewNetworkController\bin\Debug\Newtonsoft.Json.xml
+C:\Users\athani\Source\Repos\AquamanCouldBeatTheFlash\AgCubio\AndrewNetworkController\obj\Debug\AndrewNetworkController.csprojResolveAssemblyReference.cache
+C:\Users\athani\Source\Repos\AquamanCouldBeatTheFlash\AgCubio\AndrewNetworkController\obj\Debug\AndrewNetworkController.dll
+C:\Users\athani\Source\Repos\AquamanCouldBeatTheFlash\AgCubio\AndrewNetworkController\obj\Debug\AndrewNetworkController.pdb
+C:\Users\Andrew\Source\Repos\AquamanCouldBeatTheFlash\AgCubio\AndrewNetworkController\bin\Debug\AndrewNetworkController.XML
+C:\Users\Andrew\Source\Repos\AquamanCouldBeatTheFlash\AgCubio\AndrewNetworkController\obj\Debug\AndrewNetworkController.csprojResolveAssemblyReference.cache

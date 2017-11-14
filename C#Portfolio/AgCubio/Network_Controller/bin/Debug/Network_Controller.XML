@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Network_Controller</name>
+    </assembly>
+    <members>
+        <member name="T:AgCubio.Network">
+            <summary>
+            Network controller code for connecting sockets
+            </summary>
+        </member>
+        <member name="F:AgCubio.Network.server">
+            <summary>
+            The server that listens for clients
+            </summary>
+        </member>
+        <member name="M:AgCubio.Network.connectToServer(System.Action{AgCubio.PreservedState},System.String)">
+            <summary>
+            This method sets up the socket with the provided hostname and begins a conncetion with the server. 
+            The provided callback is invoked by the OS once a connection has been established.
+            </summary>
+            <param name="callBack"> The callback function</param>
+            <param name="hostname"> The host to connect to</param>
+            <returns> The socket of the current state</returns>
+        </member>
+        <member name="M:AgCubio.Network.connectedToServer(System.IAsyncResult)">
+            <summary>
+            The callback of connectToServer
+            </summary>
+            <param name="stateInAnArObject"> The current state of the client</param>
+        </member>
+        <member name="M:AgCubio.Network.recieveCallBack(System.IAsyncResult)">
+            <summary>
+            This method is invoked by the OS once the data from the server is recieved
+            </summary>
+            <param name="stateInAnArObject"> The current state of the client</param>
+        </member>
+        <member name="M:AgCubio.Network.iWantMoreData(AgCubio.PreservedState)">
+            <summary>
+            This method asks the server for more data
+            </summary>
+            <param name="state"> The current state of the client</param>
+        </member>
+        <member name="M:AgCubio.Network.Send(System.Net.Sockets.Socket,System.String)">
+            <summary>
+            Method used to send the player name, split commands and mouse position for movement
+            </summary>
+            <param name="client"> The client socket</param>
+            <param name="data"> The data to send</param>
+        </member>
+        <member name="M:AgCubio.Network.sendCallBack(System.IAsyncResult)">
+            <summary>
+            Method is called by the OS once the data has been sent to the server.
+            </summary>
+        </member>
+        <member name="M:AgCubio.Network.ServerAwaitingClient(System.Action{AgCubio.PreservedState})">
+            <summary>
+            After waiting for a socket, begin accepting sockets
+            </summary>
+            <param name="callback"> The callback function</param>
+        </member>
+        <member name="M:AgCubio.Network.AcceptANewClient(System.IAsyncResult)">
+            <summary>
+            Accepts new clients in a loop
+            </summary>
+            <param name="ar"> The state</param>
+        </member>
+        <member name="T:AgCubio.PreservedState">
+            <summary>
+            Class that represents a preserved state object
+            </summary>
+        </member>
+        <member name="F:AgCubio.PreservedState.workSocket">
+            <summary>
+            variable for storing a socket
+            </summary>
+        </member>
+        <member name="F:AgCubio.PreservedState.bufferSize">
+            <summary>
+            sets the buffersize
+            </summary>
+        </member>
+        <member name="F:AgCubio.PreservedState.buffer">
+            <summary>
+            creates byte array for transmitting and recieving data from the server
+            </summary>
+        </member>
+        <member name="F:AgCubio.PreservedState.callBack">
+            <summary>
+            delegate for callback
+            </summary>
+        </member>
+        <member name="F:AgCubio.PreservedState.builder">
+            <summary>
+            builder to store data recieved from server
+            </summary>
+        </member>
+    </members>
+</doc>

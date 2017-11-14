@@ -1,0 +1,244 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AndrewView</name>
+    </assembly>
+    <members>
+        <member name="F:AgCubio.Form1.myBrush">
+            <summary>
+            A brush for drawing cubes and names
+            </summary>
+        </member>
+        <member name="F:AgCubio.Form1.world">
+            <summary>
+            The world of the game
+            </summary>
+        </member>
+        <member name="F:AgCubio.Form1.gState">
+            <summary>
+            The preserved state object
+            </summary>
+        </member>
+        <member name="F:AgCubio.Form1.paintIt">
+            <summary>
+            Determines if we are ready to paint
+            </summary>
+        </member>
+        <member name="F:AgCubio.Form1.paintDied">
+            <summary>
+            Determines if we should paint the death screen
+            </summary>
+        </member>
+        <member name="F:AgCubio.Form1.nameIt">
+            <summary>
+            Determines if we have gotten the name from the PlayerBox
+            </summary>
+        </member>
+        <member name="F:AgCubio.Form1.playerId">
+            <summary>
+            The player's uid
+            </summary>
+        </member>
+        <member name="F:AgCubio.Form1.scaler">
+            <summary>
+            The scale factor for painting
+            </summary>
+        </member>
+        <member name="F:AgCubio.Form1.fps">
+            <summary>
+            Stores the FPS for display
+            </summary>
+        </member>
+        <member name="F:AgCubio.Form1.timer">
+            <summary>
+            Timer for measuring FPS
+            </summary>
+        </member>
+        <member name="F:AgCubio.Form1.team">
+            <summary>
+            A set of your team members
+            </summary>
+        </member>
+        <member name="F:AgCubio.Form1.maxMass">
+            <summary>
+            Your highest mass of this life
+            </summary>
+        </member>
+        <member name="F:AgCubio.Form1.serverError">
+            <summary>
+            Determines if a server error has occured
+            </summary>
+        </member>
+        <member name="F:AgCubio.Form1.connectClicked">
+            <summary>
+            Determines if connect has been clicked
+            </summary>
+        </member>
+        <member name="F:AgCubio.Form1.deathDisplayed">
+            <summary>
+            Determines if the death screen has been displayed
+            </summary>
+        </member>
+        <member name="M:AgCubio.Form1.#ctor">
+            <summary>
+            Construct the GUI and initialize variables
+            </summary>
+        </member>
+        <member name="M:AgCubio.Form1.UpdateWorld(AgCubio.PreservedState)">
+            <summary>
+            Updates the world with all the new cubes from the json
+            </summary>
+            <param name="state"> The state object of the network controller</param>
+        </member>
+        <member name="M:AgCubio.Form1.Form1_Paint(System.Object,System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Paints the cubes and other GUI elements
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:AgCubio.Form1.SetDimensions(System.Double@,System.Double@,System.Double@)">
+            <summary>
+            Sets the dimensions of our team
+            </summary>
+            <param name="scaleWidth"> The amount to scale by</param>
+            <param name="distanceFromCenterX"> Horizontal distance of cube from the center</param>
+            <param name="distanceFromCenterY"> Vertical distance of cube from the center</param>
+        </member>
+        <member name="M:AgCubio.Form1.ConnectButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Determines what happens when connect is clicked
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:AgCubio.Form1.ClickConnect">
+            <summary>
+            The actions that should be performed when connecting
+            </summary>
+        </member>
+        <member name="M:AgCubio.Form1.ConnectCallBack(AgCubio.PreservedState)">
+            <summary>
+            A callback for connecting and sending the player's name
+            </summary>
+            <param name="state"> The state object of the network controller</param>
+        </member>
+        <member name="M:AgCubio.Form1.GetFirstData(AgCubio.PreservedState)">
+            <summary>
+            Calls for updating the world with the player cube
+            </summary>
+            <param name="state"> The state object of the network controller</param>
+        </member>
+        <member name="M:AgCubio.Form1.Form1_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            If SPACE is pressed, split
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:AgCubio.Form1.SetFPS">
+            <summary>
+            Set the game's current FPS
+            </summary>
+        </member>
+        <member name="M:AgCubio.Form1.DrawCubes(System.Double,System.Double,System.Double,System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Draw all the cubes in the world (and their names)
+            </summary>
+            <param name="scaleWidth"> The amount to scale the cubes</param>
+            <param name="distanceFromCenterX"> Amount to center horizontally</param>
+            <param name="distanceFromCenterY"> Amount to center vertically</param>
+            <param name="e"></param>
+        </member>
+        <member name="M:AgCubio.Form1.ResetLabels">
+            <summary>
+            Resets and refreshes the labels during gameplay
+            </summary>
+        </member>
+        <member name="M:AgCubio.Form1.DeathLabels">
+            <summary>
+            Makes visible and refreshes labels for the post-game screen
+            </summary>
+        </member>
+        <member name="M:AgCubio.Form1.RetryButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Determines what happens when the retry button is clicked.
+            A new window is opened and the old one is closed.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:AgCubio.Form1.ServerBox_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            When ENTER is pressed, enter game
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:AgCubio.Form1.PlayerBox_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            When ENTER is pressed, enter game
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:AgCubio.Form1.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:AgCubio.Form1.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:AgCubio.Form1.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:View.MyApplicationContext">
+            <summary>
+            Keeps track of how many top-level forms are running
+            </summary>
+        </member>
+        <member name="M:View.MyApplicationContext.#ctor">
+            <summary>
+            Private constructor for singleton pattern
+            </summary>
+        </member>
+        <member name="M:View.MyApplicationContext.getAppContext">
+            <summary>
+            Returns the one MyApplicationContext.
+            </summary>
+        </member>
+        <member name="M:View.MyApplicationContext.RunForm(System.Windows.Forms.Form)">
+            <summary>
+            Runs the form
+            </summary>
+        </member>
+        <member name="M:View.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:AndrewView.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:AndrewView.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:AndrewView.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>
