@@ -1,0 +1,22 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+    <file>resources/circle.png</file>
+    <file>resources/copyframe.png</file>
+    <file>resources/eraser.png</file>
+    <file>resources/horizontalflip.png</file>
+    <file>resources/hortizontalmirror.png</file>
+    <file>resources/newframe.png</file>
+    <file>resources/nextframe.png</file>
+    <file>resources/paintbucket.png</file>
+    <file>resources/pasteframe.png</file>
+    <file>resources/pen.png</file>
+    <file>resources/preview.png</file>
+    <file>resources/previousframe.png</file>
+    <file>resources/rectangle.png</file>
+    <file>resources/rotate.png</file>
+    <file>resources/verticalflip.png</file>
+    <file>resources/verticalmirror.png</file>
+    <file>resources/zoomin.png</file>
+    <file>resources/zoomout.png</file>
+</qresource>
+</RCC>
