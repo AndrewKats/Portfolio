@@ -1,2 +1,2 @@
 # Portfolio
-My most interesting pieces of code!
+Code from various school classes. Somewhat outdated.
