@@ -1,2 +1,2 @@
 # Portfolio
-Code from various school classes. Somewhat outdated.
+Code from various school classes.
